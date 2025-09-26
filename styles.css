@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+}
+
+.controls > button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sketch-container {
+  width: max(300px, 40%);
+  aspect-ratio: 1;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #f8f8f8;
+}
+
+.sketch-container > * {
+  aspect-ratio: 1;
+  border: 1px solid #7b7b7b;
+}
+
