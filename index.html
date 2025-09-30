@@ -2,20 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <title>Etch a Sketch! - INÉS</title>
 </head>
 <body>
-  <div class="app">
-    <div class="controls">
-      <button id="new-grid">NEW GRID</button>
-      <button id="normal" class="mode-btn">NORMAL</button>
-      <button id="random-mode" class="mode-btn">RANDOM COLOR</button>
+  <div class="flex-container">
+    <div class="title"><h1>ETCH A SKETCH!</h1></div>
+    <div class="content">
+      <div class="board"></div>
+      <div class = "buttons">
+        <button>BLACK</button>
+        <button>WHITE</button>
+        <button>RANDOM</button>
+        <button>RESET</button>
+      </div>
     </div>
-    <div class="container"></div> 
+    <div>
+      <input type="text" placeholder="Size of Board" value="16">
+      <button>CHANGE SIZE</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
+
 
