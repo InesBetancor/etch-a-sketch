@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etch a sketch - inés</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
     <div class="controls">
-      <button id="resize-button">Resize</button>
-      <button id="progressive-darkening-button">Progressive Darkening</button>
-      <button id="random-color-button">Random Color</button>
-      <button id="reset-button">Reset</button>
+      <button id="new-grid">NEW GRID</button>
+      <button id="normal" class="mode-btn">NORMAL</button>
+      <button id="random-mode" class="mode-btn">RANDOM COLOR</button>
     </div>
-    <div id="sketch-container" class="sketch-container"></div>
-  </body>
+    <div class="container"></div> 
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
+

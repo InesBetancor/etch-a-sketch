@@ -5,37 +5,52 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  background: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
 }
 
 .controls {
-  width: fit-content;
-  margin-bottom: 1.5rem;
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.controls > button {
-  padding: 10px 16px;
+button {
+  margin: 8px 0;
+  padding: 10px 18px;
   font-size: 1rem;
   cursor: pointer;
+  border: 2px solid #0f0d0d;
+  background: #fff;
 }
 
-.sketch-container {
-  width: max(300px, 40%);
-  aspect-ratio: 1;
+button.active {
+  background: #333;
+  color: #fff;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  border: 2px solid #0b0b0b;
+  background: white;
   display: flex;
-  flex-wrap: wrap;
-
-  background-color: #f8f8f8;
+  flex-direction: column;
 }
 
-.sketch-container > * {
-  aspect-ratio: 1;
-  border: 1px solid #7b7b7b;
+.square {
+  border: 1px solid #0a0606;
+  background: white;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
 }
+
+
 
